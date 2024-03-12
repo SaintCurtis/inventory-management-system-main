@@ -40,12 +40,6 @@ export default function Navbar() {
         <Link className="font-bold text-2xl md:text-4xl" href="/">
           Inventory
         </Link>
-
-        <nav className="hidden sm:flex items-center gap-3">
-          <Link href="/">Features</Link>
-          <Link href="/">Pricing</Link>
-          <Link href="/">Free Tools</Link>
-        </nav>
         {status === "authenticated" ? (
           <div className="flex items-center gap-4">
             <div className="flex items-center space-x-4">
@@ -98,11 +92,6 @@ export default function Navbar() {
             <AiOutlineClose className="text-2xl" />
           </button>
         </div>
-        <nav className="flex flex-col items-start gap-3 mb-10">
-          <Link href="/">Features</Link>
-          <Link href="/">Pricing</Link>
-          <Link href="/">Free Tools</Link>
-        </nav>
         <div className="flex flex-col items-start gap-4">
           <Link href="/login">Login</Link>
           <ThemeLink
